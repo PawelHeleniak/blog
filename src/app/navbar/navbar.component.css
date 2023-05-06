@@ -1,0 +1,18 @@
+nav{
+  position: fixed;
+  width: 100%;
+  border-bottom: 2px solid var(--black-10);
+}
+.nav-block{
+  display: flex;
+  justify-content: space-between;
+}
+.nav-block_logo a{
+  font-weight: 600;
+}
+a{
+  text-decoration: none;
+  color: var(--black-10);
+  padding: 10px;
+  display: inline-block;
+}
