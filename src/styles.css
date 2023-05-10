@@ -6,7 +6,9 @@
 }
 :root{
   --black-10: hsl(0, 0%, 10%);
+  --background-gray: hsl(260, 20%, 97%);
 }
 body{
   font-family: 'Open Sans', sans-serif;
+  background-color: var(--background-gray);   
 }
