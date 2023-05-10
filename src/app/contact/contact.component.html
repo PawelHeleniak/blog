@@ -1,0 +1,28 @@
+<section id="contact">
+  <div class="contact-title">
+    <h2>Kontakt</h2>
+  </div>
+  <div class="block-contact">
+    <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+      <div class="form_input">
+        <label for="firstName">Imie: </label>
+        <input id="firstName" type="text" formControlName="firstName">
+      </div>      
+      <div class="form_input">
+        <label for="lastName">Nazwisko: </label>
+        <input id="lastName" type="text" formControlName="lastName">
+      </div>
+      <div class="form_input">
+        <label for="email">Email: </label>
+        <input id="email" type="email" formControlName="email">
+      </div>
+      <div class="form_input">
+        <label for="message">Wiadomość: </label>
+        <input id="message" type="text" formControlName="message">
+      </div>     
+      <div class="form_button">
+        <button type="submit">Wyślij</button>
+      </div>
+    </form>
+  </div>
+</section>
