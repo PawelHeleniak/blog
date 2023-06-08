@@ -1,24 +1,31 @@
 <nav>
   <div class="nav-block">
-    <div class="nav-block_logo">
-      <a href="">LOGO</a>
-    </div>
-    <div class="nav-block_links">
-      <a href="#news">
-        <span>
-          Nowości
-        </span>
-      </a>
-      <a href="">
-        <span>
-          Galeria
-        </span>
-      </a>
-      <a href="">
-        <span>
-          Kontakt
-        </span>
-      </a>
+    <div class="nav-block_links" [ngClass]="{active: menu}">
+      <div class="one">
+        <div class="nav-block_logo">
+          <a href="">LOGO</a>
+        </div>
+        <div class="nav-block_icon">
+          <i class="fa-solid fa-bars" (click)="menu = !menu"></i>
+        </div>
+      </div>
+      <div class="two">
+        <a routerLink="/nowosci" routerLinkActive="active" >
+          <span>
+            Nowości
+          </span>
+        </a>
+        <a routerLink="/galeria" routerLinkActive="active" >
+          <span>
+            Galeria
+          </span>
+        </a>
+        <a routerLink="/kontakt" routerLinkActive="active" >
+          <span>
+            Kontakt
+          </span>
+        </a>
+      </div>
     </div>
   </div>
 </nav>

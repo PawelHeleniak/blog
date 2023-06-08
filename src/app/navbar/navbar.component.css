@@ -1,18 +1,33 @@
 nav{
   /* position: fixed; */
   width: 100%;
-  border-bottom: 2px solid var(--black-10);
+  /* background-color: var(--black-20); */
+  color: var(--text-light);
 }
-.nav-block{
+.nav-block_links .one{
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  background-color: var(--black-20);
+  z-index: 1;
+  position: relative;
 }
 .nav-block_logo a{
   font-weight: 600;
 }
-a{
+.nav-block a, i{
   text-decoration: none;
   color: var(--black-10);
-  padding: 10px;
+  padding: 20px;
   display: inline-block;
+}
+
+.nav-block_links .two{
+  transform: translateY(-100%);
+  background-color: var(--black-20);
+  display: none;
+}
+.nav-block_links.active .two{
+  transform: translateY(0);
+  display: block;
 }

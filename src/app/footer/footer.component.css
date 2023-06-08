@@ -1,0 +1,11 @@
+footer{
+  width: 100%;
+  background-color: var(--black-20);
+  padding: 15px;
+}
+footer .copyright{
+  display: flex;
+  justify-content: center;
+  color: var(--text-light);
+  font-size: 0.9rem;
+}

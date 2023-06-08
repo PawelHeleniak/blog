@@ -1,35 +1,45 @@
-<section id="news">
-  <div class="title">
-  <h2>Nowości</h2>
-  </div>
-  <div class="section-block">
-    <div class="section-block_image">
-      <img src="../../assets/image/4060ti.jpg" alt="rtx4060ti"/>
-    </div>
-    <div class="section-block_title">
-      <h3>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      </h3>
-    </div>
-    <div class="section-block_desc">
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero nihil corporis labore dolorum tenetur, blanditiis esse, distinctio tempora praesentium voluptate minima maxime ipsum officia non fugiat quibusdam modi qui possimus.
-      </p>
+<section class="section">
+  <div class="section-title">
+    <div class="block">
+      <h2>Nowości</h2>
     </div>
   </div>
-  <div class="section-block">
-    <div class="section-block_image">
-      <img src="../../assets/image/4060ti.jpg" alt="rtx4060ti"/>
+  <div class="section-content">
+    <div class="block" *ngFor="let item of items">
+      <div class="block-image">
+        <img src={{item.img}} alt={{item.imgAlt}}/>
+      </div>
+      <div class="block-title">
+        <h3>
+          {{item.title}}
+        </h3>
+      </div>
+      <div class="block-date">
+        <p>
+          {{item.date}}    
+        </p>
+      </div>
+      <div class="block-desc">
+        <p>
+          {{item.description}}
+        </p>
+      </div>
     </div>
-    <div class="section-block_title">
-      <h3>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      </h3>
-    </div>
-    <div class="section-block_desc">
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero nihil corporis labore dolorum tenetur, blanditiis esse, distinctio tempora praesentium voluptate minima maxime ipsum officia non fugiat quibusdam modi qui possimus.
-      </p>
-    </div>
+  </div>
+  <div class="section-pagination">
+    <!-- <div class="pagination"> -->
+      <div class="pagination-btn arrow">
+        <button><i class="fa-solid fa-chevron-left"></i></button>
+      </div>
+      <div class="pagination-btn active">
+        <button>1</button>
+      </div>
+      <div class="pagination-btn">
+        <button>2</button>
+      </div>
+      <div class="pagination-btn arrow">
+        <button><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    <!-- </div> -->
   </div>
 </section>
