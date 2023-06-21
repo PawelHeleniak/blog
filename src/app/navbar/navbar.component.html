@@ -10,6 +10,12 @@
         </div>
       </div>
       <div class="two">
+        <div class="icon">
+          <i class="fa-solid fa-sun" (click)="toggleDarkTheme()" *ngIf="isDark; else isDarkOut"></i>
+        </div>
+        <ng-template #isDarkOut>
+          <i class="fas fa-moon" (click)="toggleDarkTheme()"></i>
+        </ng-template>
         <a routerLink="/nowosci" routerLinkActive="active" >
           <span>
             Nowości

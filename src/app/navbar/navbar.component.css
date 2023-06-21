@@ -16,12 +16,16 @@ nav{
   font-weight: 600;
 }
 .nav-block a, i{
-  text-decoration: none;
   color: var(--black-10);
-  padding: 20px;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 50px;
   display: inline-block;
+  cursor: pointer;
 }
-
+.nav-block i{
+  margin-right: 0;
+}
 .nav-block_links .two{
   transform: translateY(-100%);
   background-color: var(--black-20);
@@ -29,5 +33,36 @@ nav{
 }
 .nav-block_links.active .two{
   transform: translateY(0);
-  display: block;
+  display: flex;
+  flex-direction: column;
+}
+.two a:hover{
+  background-color: var(--primary-hover);
+}
+.two a.active{
+  background-color: var(--primary);
+}
+@media screen and (min-width: 420px){
+  .nav-block_links.active .two{
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 768px){
+  .nav-block_links{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--black-20);
+  }
+  .nav-block_icon{
+    display: none;
+  }
+  .nav-block_links .two{
+    transform: translateY(0);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  .nav-block a{
+    margin-left: 0;
+  }
 }

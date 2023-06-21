@@ -5,22 +5,28 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
 }
+.block-date p{
+  font-size: 0.9rem;
+  margin: 5px 0 15px 0;
+}
 .section-pagination{
   display: flex;
   justify-content: flex-end;
-}
-.pagination-btn {
-  margin-left: 5px;
 }
 .pagination-btn button{
   width: 30px;
   height: 30px;
   background-color: transparent;
-  border: 1px solid var(--border);
+  border: none;
+  cursor: pointer;
+  color: var(--text-dark);
+}
+.pagination-btn button:hover{
+  background-color: var(--primary-hover);
+  color: var(--text-light);
 }
 .pagination-btn.active button{
   background-color: var(--primary);
-  border-color: var(--primary);
   color: var(--text-light);
 }
 @media screen and (min-width: 768px){
