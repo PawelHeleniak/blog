@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NewsComponent } from './news/news.component';
 import { ContactComponent } from './contact/contact.component';
+import { GalleryComponent } from './gallery/gallery.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 
@@ -16,7 +17,8 @@ import { FooterComponent } from './footer/footer.component';
     NavbarComponent,
     NewsComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    GalleryComponent,
   ],
   imports: [
     BrowserModule,

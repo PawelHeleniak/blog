@@ -36,6 +36,9 @@ nav{
   display: flex;
   flex-direction: column;
 }
+.two a{
+  transition: .2s ease-in background-color;
+}
 .two a:hover{
   background-color: var(--primary-hover);
 }

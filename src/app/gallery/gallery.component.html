@@ -1,1 +1,14 @@
-<p>gallery works!</p>
+<section class="section">
+  <div class="section-title">
+    <div class="block">
+      <h2>Galeria</h2>
+    </div>
+  </div>
+  <div class="section-content gallery">
+    <div class="block" *ngFor="let item of items">
+      <a class="block-image">
+        <img src={{item.img}} alt={{item.imgAlt}}/>
+      </a>
+    </div>
+  </div>
+</section>

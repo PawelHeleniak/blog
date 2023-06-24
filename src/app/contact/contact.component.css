@@ -4,19 +4,29 @@
 .contact-title{
   margin-bottom: 20px;
 }
+.form_input label{
+  margin-bottom: 5px;
+}
 .form_input{
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
-}
-.form_input label{
-  margin-bottom: 5px;
 }
 .form_input input{
   border: 1px solid var(--border);
   border-radius: 6px;
   padding: 10px;
   color: var(--black-10);
+}
+input{
+  background-color: transparent;
+}
+input.error{
+  border: 1px solid hsl(0, 55%, 47%) !important;
+}
+.form_input p{
+  color: hsl(0, 55%, 47%);
+  font-size: 0.9rem;
 }
 .form_button button{
   background-color: var(--primary);
@@ -31,4 +41,8 @@
 .form_button button:hover{
   background-color: var(--primary-hover);
   cursor: pointer;
+}
+.info p{
+  font-size: 1.1rem;
+  font-weight: 600;
 }

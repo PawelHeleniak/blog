@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './news.component.html',
   styleUrls: ['./news.component.css']
 })
-export class NewsComponent {
+export class NewsComponent implements OnInit {
   ngOnInit() {
     this.pagination = this.items.length%4;
 
