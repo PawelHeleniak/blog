@@ -5,15 +5,95 @@
 }
 .img-block img{
   display: flex;
-  margin-bottom: 20px;
   width: 100%;
+}
+.img{
+  margin-bottom: 20px;
+}
+.img,
+.desc{
+  flex-basis: 50%;
+}
+
+/* form */
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form_input{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.form_input input{
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px;
+  color: var(--black-10);
+}
+label{
+  margin-bottom: 5px;
+}
+input{
+  background-color: transparent;
+}
+.form_button{
+  margin-top: 27px;
+  width: 100%;
+}
+.form_button button{
+  background-color: var(--primary);
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  width: 100%;
+  /* margin-top: 10px; */
+}
+.form_button button:hover{
+  background-color: var(--primary-hover);
+  cursor: pointer;
+}
+/* comments */
+.comments-title{
+  margin-bottom: 10px;
+}
+.comments{
+  margin-top: 10px;
+  padding: 20px;
+  background: #3e3e3e;
+  border-radius: 12px;
+}
+.comments p:first-child{
+  color: var(--primary-hover);
+}
+@media screen and (min-width: 600px){
+  .comments{
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 600px){
+  form{
+    flex-direction: row;
+  }
+  .form_button{
+    width: 50%;
+  }
+  .form_input{
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
 }
 
 @media screen and (min-width: 768px){
   .img-block{
     flex-direction: row;
   }
-  .img-block img{
+  .img{
     margin-right: 20px;
     margin-bottom: 0;
   }

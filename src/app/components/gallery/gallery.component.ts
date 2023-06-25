@@ -56,16 +56,6 @@ export class GalleryComponent {
       imgAlt: "gogle apple ar/vr",
       ID: 9,
     },
-    {
-      img: "assets/image/intel-14th.webp",
-      imgAlt: "intel 14th",
-      ID: 10,
-    },
-    {
-      img: "assets/image/4060ti.jpg",
-      imgAlt: "RTX 4060Ti",
-      ID: 11,
-    },
   ];
 }
 interface Items{

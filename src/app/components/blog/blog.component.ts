@@ -1,5 +1,6 @@
 import { Component, OnInit  } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 // Fake data
 import {POSTS} from 'src/app/service/data.service';
@@ -11,7 +12,7 @@ import {POSTS} from 'src/app/service/data.service';
 })
 export class BlogComponent implements OnInit{
   constructor(private route: ActivatedRoute) {}
-  
+
   ngOnInit() {
     this.route.queryParams.subscribe(params => {
       this.id = params['id'];
@@ -19,9 +20,32 @@ export class BlogComponent implements OnInit{
 
     this.post = POSTS[this.id-1]
   }
-
   id: number = 0;
 
+  profileForm = new FormGroup({
+    firstName: new FormControl('', [Validators.required]),
+    message: new FormControl('', [Validators.required]),
+  });
+
+  onSubmit() {
+    const {firstName, message} = this.profileForm.value;
+
+    if(firstName && message){
+      this.validate = false
+
+      const newComment: Comments = {name: firstName, comment: message}
+      this.comments.push(newComment);
+
+      //clear input
+      this.profileForm.reset();
+    }else{
+      this.validate = true
+    } 
+  }
+  validate:boolean = false;
+
+  
+  comments: Array<Comments> = []
   //---Data---
   post:Post = {
     title: '',
@@ -39,4 +63,8 @@ interface Post{
   img: string;
   imgAlt: string;
   ID: number;
+}
+interface Comments{
+  name: string,
+  comment: string,
 }

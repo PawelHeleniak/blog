@@ -7,11 +7,36 @@
   <div class="section-content details">
     <div class="block">
       <div class="img-block">
-        <img src={{post.img}} alt="">
-        <p>{{post.description}}</p>
+        <div class="img">
+          <img src={{post.img}} alt="">
+        </div>
+        <div class="desc">
+          <p>{{post.description}}</p>
+        </div>
       </div>
       <div class="comments-block">
-        <h2>Komentarze</h2>
+        <div class="comments-title">
+          <h2>Komentarze</h2>
+        </div>
+        <div class="block-contact">
+          <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+            <div class="form_input">
+              <label for="firstName">Imie * </label>
+              <input id="firstName" type="text" formControlName="firstName" [ngClass]="{error: validate && profileForm.controls.firstName.errors?.['required']}">
+            </div>      
+            <div class="form_input">
+              <label for="message">Wiadomość * </label>
+              <input id="message" type="text" formControlName="message" [ngClass]="{error: validate && profileForm.controls.message.errors?.['required']}">
+            </div>     
+            <div class="form_button">
+              <button type="submit">Dodaj</button>
+            </div>
+          </form>
+          <div class="comments" *ngFor="let item of comments">
+            <p>{{item.name}}</p>
+            <p>{{item.comment}}</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>

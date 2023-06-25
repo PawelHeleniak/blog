@@ -5,6 +5,14 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
 }
+.section-content.news .block{
+  cursor: pointer;
+transition: .2s ease-in box-shadow;
+}
+.section-content.news .block:hover{
+  box-shadow: 0px 0px 12px -2px var(--box-shadow);
+}
+
 .block-date p{
   font-size: 0.9rem;
   margin: 5px 0 15px 0;

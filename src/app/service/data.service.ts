@@ -38,5 +38,13 @@ export const POSTS = [
     img: "assets/image/gogle-apple-ar.jpg",
     imgAlt: "gogle apple ar/vr",
     ID: 5,
-  }
+  },
+  {
+    title: "ENDORFY - nowe SilentiumPC",
+    date: "25.06.2023",
+    description: "nowa globalna marka technologiczna Spółka Cooling, właściciel SPC Gear oraz SilentiumPC, prezentuje nową markę — ENDORFY. Marka ENDORFY ma być odpowiedzią na dynamicznie zmieniającą się sytuację na rynku nowych technologii. To również inwestycja umożliwiająca firmie szybszy rozwój na globalnym rynku.",
+    img: "assets/image/endorfy.webp",
+    imgAlt: "intel 14th",
+    ID: 6,
+  },
 ];

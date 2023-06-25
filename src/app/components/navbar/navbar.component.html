@@ -16,21 +16,13 @@
         <ng-template #isDarkOut>
           <i class="fas fa-moon" (click)="toggleDarkTheme()"></i>
         </ng-template>
-        <a routerLink="/nowosci" routerLinkActive="active" >
-          <span>
-            Nowości
-          </span>
-        </a>
-        <a routerLink="/galeria" routerLinkActive="active" >
-          <span>
-            Galeria
-          </span>
-        </a>
-        <a routerLink="/kontakt" routerLinkActive="active" >
-          <span>
-            Kontakt
-          </span>
-        </a>
+        <ng-container *ngFor="let item of navList">
+          <a routerLink={{item.href}} routerLinkActive="active" >
+            <span>
+              {{item.name}}
+            </span>
+          </a>
+        </ng-container>
       </div>
     </div>
   </div>

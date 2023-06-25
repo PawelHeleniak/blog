@@ -21,11 +21,8 @@
 input{
   background-color: transparent;
 }
-input.error{
-  border: 1px solid hsl(0, 55%, 47%) !important;
-}
 .form_input p{
-  color: hsl(0, 55%, 47%);
+  color: var(--error);
   font-size: 0.9rem;
 }
 .form_button button{

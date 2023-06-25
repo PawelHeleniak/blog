@@ -27,4 +27,19 @@ export class NavbarComponent {
     }
   }
   menu:boolean = false;
+
+  navList: any =[
+    {
+        name: "Nowości",
+        href: "/nowosci",
+    },
+    {
+      name: "Galeria",
+      href: "/galeria",
+  },
+  {
+    name: "Kontakt",
+    href: "/kontakt",
+},
+  ]
 }
