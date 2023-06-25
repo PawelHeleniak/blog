@@ -64,7 +64,7 @@ input{
 .comments{
   margin-top: 10px;
   padding: 20px;
-  background: #3e3e3e;
+  background-color: var(--white-1);
   border-radius: 12px;
 }
 .comments p:first-child{

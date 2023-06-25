@@ -18,9 +18,6 @@
   padding: 10px;
   color: var(--black-10);
 }
-input{
-  background-color: transparent;
-}
 .form_input p{
   color: var(--error);
   font-size: 0.9rem;

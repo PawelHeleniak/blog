@@ -37,6 +37,7 @@ body.dark-theme{
   --text-dark: hsl(0, 20%, 97%);
   --box-shadow: hsl(0, 0%, 40%);
   --error: hsl(0, 55%, 47%);
+  --box: hsl(0, 0%, 24%);
 }
 /* Global style */
 a{
@@ -70,10 +71,13 @@ img{
   height: 100%;
 }
 
+/* input */
 input.error{
   border: 1px solid var(--error) !important;
 }
-
+input{
+  background-color: transparent;
+}
 @media screen and (min-width: 420px){
   .block{
     padding: 20px;
