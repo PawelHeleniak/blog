@@ -3,12 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { NewsComponent } from './news/news.component';
-import { ContactComponent } from './contact/contact.component';
-import { GalleryComponent } from './gallery/gallery.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { NewsComponent } from './components/news/news.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { FooterComponent } from './footer/footer.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { BlogComponent } from './components/blog/blog.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { FooterComponent } from './footer/footer.component';
     ContactComponent,
     FooterComponent,
     GalleryComponent,
+    BlogComponent,
   ],
   imports: [
     BrowserModule,

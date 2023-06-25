@@ -5,7 +5,7 @@
     </div>
   </div>
   <div class="section-content">
-    <div class="block" *ngFor="let item of items">
+    <div class="block" *ngFor="let item of items" (click)="handlePage(item.ID)">
       <div class="block-image">
         <img src={{item.img}} alt={{item.imgAlt}}/>
       </div>
@@ -24,6 +24,11 @@
           {{item.description}}
         </p>
       </div>
+      <!-- <a routerLink="/nowosci" routerLinkActive="active" >
+        <span>
+          Nowości
+        </span>
+      </a> -->
     </div>
   </div>
   <div class="section-pagination">

@@ -1,0 +1,21 @@
+.img-block{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.img-block img{
+  display: flex;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px){
+  .img-block{
+    flex-direction: row;
+  }
+  .img-block img{
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  
+}
